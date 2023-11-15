@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="page-header">
+                    <h1 align="center">THE BIG SPIN</h1>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="row topbox">
+            <div class="col-md-6 col-md-offset-3 rollbox" id="borderimg">
+                <div class="line"></div>
+                <table><tr id="loadout">
+                    
+                </tr></table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <button id="roll" class="btn btn-success form-control start-btn">
+                    <i class="fas fa-dice"></i> SPIN
+                </button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              
+                <div id="msgbox"class="alert alert-warning" style="margin-top:20px;display:none;">You need to add at least 2 lines!</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-md-12" style="text-align:center">
+                <div id="log"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <p>Insert Player's Names:</p>
+                <textarea class="form-control inputbox" rows="10" type="text" id="result"></textarea>
+                <input id="name" type="text" value="" />
+                <button id="myButton">Delete</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="javascript/raffle.js"></script>
+    <script src="https://www.wpromotions.eu/confetti.min.js"></script>
+    <script src="javascript/sweetalert.js"></script>
+</body>
+</html>
